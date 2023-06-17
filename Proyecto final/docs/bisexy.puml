@@ -1,0 +1,31 @@
+@startuml
+
+package bisexy{ 
+        class BisectionMethod 
+        class Main
+        class Function
+        class PointPrinter
+       
+     
+class BisectionMethod {
+}
+
+class Main {
+}
+
+class Function {
+  + f(x: double): double
+}
+
+class PointPrinter {
+  + imprimePuntos(a: double, b: double): void
+}
+
+BisectionMethod --|> Function
+Main --> BisectionMethod
+Main --> PointPrinter
+
+}
+@enduml
+
+
